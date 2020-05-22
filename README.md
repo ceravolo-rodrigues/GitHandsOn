@@ -9,6 +9,6 @@ https://github.com/xonho/GitHandsOn/blob/master/GIT-Base.md
 ## Arquivo HandsOn
 https://github.com/xonho/GitHandsOn/blob/master/Roadmap-GIT.md
 ## Windows - Como configurar chaves ssh
-https://github.com/xonho/GitHandsOn/blob/master/GitHub-SSH%20Ubuntu.md
+https://github.com/xonho/GitHandsOn/blob/master/GIitHub-SSH%20Windows.md
 ## Ubuntu - Como configurar chaves ssh
 https://github.com/xonho/GitHandsOn/blob/master/GitHub-SSH%20Ubuntu.md
