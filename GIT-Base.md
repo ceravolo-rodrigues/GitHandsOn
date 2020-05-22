@@ -1,7 +1,5 @@
 # Git Quickstart Guide
 
-
-
 ## Preparando o Ambiente
 Antes de entrar no que é o GIT e seus usos, vamos explicar como instalá-lo nas plataformas
 ## Instalação 
@@ -75,50 +73,108 @@ Projetos hospedados: Worpress, GNU Linux, Atom, Electron
 ### Criação de Conta
 *Piece of cake. Entre no site do GitHub*
 ![](https://github.com/xonho/GitHandsOn/raw/master/images/github-init.png)
-### Configuração de Chaves SSH
 
-3.4.	Conceitos e Comandos
-Regra de ouro: Teve dúvida? Sua primeira linha de frente é
-git NOME_COMANDO --help
-3.4.1.	Repositório
 
-3.4.2.	Init
-Utilizado para iniciar nosso projeto com um sistema de controle de versão de código
-Na pasta do projeto, digite
-git init 
-3.4.3.	3. Clone
-Clona um projeto já existente
-git clone URL
-Com o GitHub, é necessário a configuração das chaves SSH
-3.4.4.	Remote
+## Conceitos e Comandos
+**Regra de ouro: Teve dúvida? Sua primeira linha de frente é** 
+`git NOME_COMANDO --help`
+
+### Repositório
+
+Um repositório é o elemento mais básico do Git e GitHub. Imagine isso como uma pasta do projeto (que contém outras pastas também). Um repositório contém todos os arquivos do projeto (incluindo a documentação) e armazena o histórico de revisões de cada arquivo.
+
+#### Init
+Utilizado para iniciar nosso projeto com um sistema de controle de versão de código. Na pasta do projeto, digite
+`git init`
+
+#### Clone
+Clona um projeto já existente em algum *remote*
+`git clone URL`
+ (***Com o GitHub, é necessário a configuração das chaves SSH***)
+#### Remote
 Repositório Remoto do nosso Projeto. Para configurá-lo: 
-git remote add origin URL_REPO
-git remote remove origin 
+`git remote add origin URL_REPO`
+`git remote remove origin`
 
-3.4.5.	Workflow
+*Na maioria casos, quando clonamos um repositório, o remote já vem configurado*
 
-3.4.6.	Branch
+#### Workflow e Lifecycle
 
-3.4.7.	Checkout
+![Lifecycle de um arquivo](https://git-scm.com/book/en/v2/images/lifecycle.png)
+> *Possíveis estados de um arquivo*
 
-3.4.8.	Commit
+![](https://raw.githubusercontent.com/rohit120582sharma/Documentation/master/images/git.png)
+> Primeiro, você edita seus arquivos no diretório de trabalho. 
+> Quando você estiver pronto para salvar uma cópia do estado atual do projeto, faça mudanças com o git add.
+> Depois de ficar satisfeito com o snapshot em staging, você o confirma no histórico do projeto com o git commit.
+> Os comandos: git add, git status e git commit usados ​​em conjunto para salvar um snapshot do estado atual de um projeto Git.
 
-3.4.9.	Amend
+### Status
 
-3.4.10.	Push / Pull
+O comando confere o status e reporta que não existe nada para fazer um commit, o que quer dizer que o repositório está com o atual estado do diretório de trabalho e não existem modificações a serem gravadas.
 
-3.4.11.	Merge e Conflitos
+### Add
 
-3.4.12.	Pull Requests
+O comando git add inclui uma alteração do diretório de trabalho na área de preparação (Staging).
+`git add arquivo`
 
-3.4.13.	Rebase
+### Commit
 
-3.4.14.	Tagging
+O commit do git é usado para criar um snapshot das alterações em etapas ao longo de uma linha do tempo de um histórico de projetos do Git.
+`git commit -m "MESSAGE"`
 
-4.	Futuro
 
-Referências
+### Branch
+Uma ramificação (branch) representa uma linha de desenvolvimento independente. 
+As ramificações servem como uma abstração para o processo de edit / stage / commit.
+
+Lista os branches locais
+
+`git branch`
+
+Lista os branches remotos
+
+`git branch -a`
+
+Cria um branch mas não dá checkout
+`git branch <branch>`
+
+
+### Checkout
+Mudar de branch. Quando o git muda de branch, todas as alterações que foram aplicadas na branch serão substituídas pelas alterações da branch que foi feito o checkout.
+
+Faz checkout num branch existente
+
+`git checkout <branch` 
+
+Cria um brancheo dá checkout
+
+`git checkout -b <branch>`
+
+
+### Push
+
+O git push é utilizado para enviar as alterações confirmadas para repositórios remotos para colaboração
+
+### Pull
+
+O comando git pull é, na verdade, uma combinação de dois outros comandos git fetch seguido por git merge. Na primeira etapa da operação, git pull vai executar um git fetch do escopo para o ramo local ao qual HEAD está apontado. Depois que o conteúdo for baixado, git pull vai entrar em um fluxo de trabalho de merge. Um novo commit de merge vai ser criado e HEAD vai ser atualizado para apontar para o novo commit.
+
+### Head
+O ponteiro HEAD aponta para o último grupo de alterações(snapshot) comitado.
+
+### Merge
+
+A fusão (merge) é a maneira de o Git reunir novamente uma história bifurcada (forked). O comando git merge permite pegar as linhas independentes de desenvolvimento criadas pelo git branch e integrá-las em um único branch.
+
+`git merge <branch>`
+
+## Futuro
+O Básico de Git está aqui. Existem outros conceitos e comandos importantes como Rebase, Tagging, Stash, Prune, Hooks, Ammend
+
+# Referências
 https://git-scm.com/ - Git 
+https://github.com/rohit120582sharma/Documentation/wiki/Git-~-Saving-changes - rohit120582sharma@GitHub
 
 
 
