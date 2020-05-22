@@ -17,11 +17,11 @@ Next-next-finish :)
 - Abra  puttygen
 - Clique em GENERATE
 - Mova seu mouse aleatoriamente
-- A tela abaixo irá aparecer
-![](https://vladmihalcea.com/wp-content/uploads/2014/04/puttygen-save-private-key.png)
+- A tela abaixo irá aparecer\
+ ![](https://vladmihalcea.com/wp-content/uploads/2014/04/puttygen-save-private-key.png)
 - Copie o conteúdo PUBLIC KEY (ctrl+c mesmo). **Não feche o app**
-- Vá no Perfil do GitHub -> Chaves SSH e GPG . Clique em NOVA CHAVE SSH (Esse é o link direto https://github.com/settings/ssh/new )
-![](https://vladmihalcea.com/wp-content/uploads/2014/04/github-add-key1.png)
+- Vá no Perfil do GitHub -> Chaves SSH e GPG . Clique em NOVA CHAVE SSH (Esse é o link direto https://github.com/settings/ssh/new ) \
+ ![](https://vladmihalcea.com/wp-content/uploads/2014/04/github-add-key1.png)
 - Dê um nome sugestivo. MEU-PC. 
 - Cole a chave copiada. Clique em adicionar
 - Volte ao Puttygen. 
