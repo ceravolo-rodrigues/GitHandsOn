@@ -8,5 +8,7 @@ Idealizado em Markdown
 https://github.com/xonho/GitHandsOn/blob/master/GIT-Base.md
 ## Arquivo HandsOn
 https://github.com/xonho/GitHandsOn/blob/master/Roadmap-GIT.md
-## Como configurar chaves ssh
-https://github.com/xonho/GitHandsOn/blob/master/Roadmap-SSH_KEYS.md
+## Windows - Como configurar chaves ssh
+https://github.com/xonho/GitHandsOn/blob/master/GitHub-SSH%20Ubuntu.md
+## Ubuntu - Como configurar chaves ssh
+https://github.com/xonho/GitHandsOn/blob/master/GitHub-SSH%20Ubuntu.md
